@@ -1,8 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import BooksList from './BooksList';
 
 const BooksView = () => {
-  const books = [{ title: 'JavaScript vs React', author: 'John Doe' }];
+  const books = useSelector((state) => state.books);
 
   return (
     <section className="container mx-auto">
