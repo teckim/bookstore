@@ -1,8 +1,13 @@
+import uuidv4 from 'react-uuid';
+
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-const initialState = [];
-let currentId = 0;
+const initialState = [
+  { id: uuidv4(), title: 'The Da Vinci Code', author: 'Robert Langdon' },
+  { id: uuidv4(), title: 'The Girl with the Dragon Tattoo', author: 'Millennium' },
+  { id: uuidv4(), title: 'The Help', author: 'Hardcover' },
+];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
@@ -19,17 +24,13 @@ export default function reducer(state = initialState, action = {}) {
 }
 
 export function add(newBook) {
-  const action = {
+  return {
     type: ADD,
     payload: {
       ...newBook,
-      id: currentId,
+      id: uuidv4(),
     },
   };
-
-  currentId += 1;
-
-  return action;
 }
 
 export function remove(id) {
