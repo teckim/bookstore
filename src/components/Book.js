@@ -1,12 +1,15 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { remove as removeBook } from '../redux/books/books';
+import { remove as removeBook, removeBookById } from '../redux/books/books';
 
 const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
 
-  const handleDelete = () => dispatch(removeBook(id));
+  const handleDelete = () => {
+    dispatch(removeBookById(id))
+      .then(() => dispatch(removeBook(id)));
+  };
 
   return (
     <div className="book d-flex">
