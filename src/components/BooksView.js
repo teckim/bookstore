@@ -13,8 +13,7 @@ const BooksView = () => {
   }, [dispatch]);
 
   return (
-    <section className="container mx-auto">
-      <BookForm />
+    <section className="container mx-auto px-4">
       {
         books.isFaild
           ? <div>Faild</div>
@@ -28,6 +27,8 @@ const BooksView = () => {
             </>
           )
       }
+      <hr className="my-10" />
+      <BookForm />
     </section>
   );
 };

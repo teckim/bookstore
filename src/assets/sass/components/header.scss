@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.header {
+  border-bottom: 1px solid $border_color;
+  background-color: #fff;
+
+  &__body {
+    height: 5.938rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: $primary_color;
+    margin-right: 3rem;
+  }
+
+  &__user-icon {
+    height: 2.8rem;
+    width: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 1px solid $border_color;
+  }
+}

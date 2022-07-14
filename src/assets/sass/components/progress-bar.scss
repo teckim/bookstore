@@ -1,0 +1,24 @@
+.progress-bar {
+  display: flex;
+  align-items: center;
+
+  &__circle {
+    height: 4.25rem;
+    width: 4.25rem;
+  }
+
+  &__info {
+    margin-left: 1.313rem;
+  }
+
+  &__value {
+    font-size: 2rem;
+    line-height: initial;
+  }
+
+  &__status {
+    font-size: 0.875rem;
+    opacity: 0.5;
+    text-transform: capitalize;
+  }
+}

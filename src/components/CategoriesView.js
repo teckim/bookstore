@@ -8,7 +8,7 @@ const CategoriesView = () => {
   const handleClick = () => disptch(checkStatus());
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto px-4">
       <button type="button" onClick={handleClick}>Check Status</button>
       <div>{categories}</div>
     </section>

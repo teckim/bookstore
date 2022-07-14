@@ -1,16 +1,14 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import Header from './Header';
+import '../assets/sass/components/layout.scss';
 
 const Layout = () => (
-  <main className="min-h-full">
-    <header className="container mx-auto">
-      <div className="text-3xl font-bold">Book Store</div>
-      <nav>
-        <Link to="/">Books</Link>
-        <Link to="/categories">Categories</Link>
-      </nav>
-    </header>
-    <Outlet />
+  <main className="layout">
+    <Header />
+    <div className="layout__content">
+      <Outlet />
+    </div>
   </main>
 );
 
