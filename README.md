@@ -16,8 +16,8 @@
 
 ## Live Demos
 
-[Netlify](https://main--sparkling-unicorn-8ccaee.netlify.app/)
-[Heroku](https://math-magicians-teckim.herokuapp.com/)
+[Netlify](https://62d0431928f3e01d11bc7992--vocal-pithivier-56a3a1.netlify.app/)
+[Heroku](https://bookstore-teckim.herokuapp.com/)
 
 
 ## Getting Started
