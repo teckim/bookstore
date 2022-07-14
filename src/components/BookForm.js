@@ -27,10 +27,10 @@ const BookForm = () => {
   return (
     <form className="book-form" onSubmit={handleSubmit}>
       <div className="book-form__title">ADD NEW BOOK</div>
-      <div className="flex flex-col md:grid grid-cols-4 gap-x-9 gap-y-4">
-        <input className="book-form__input col-span-2" name="title" placeholder="title" onChange={handleInputChange} />
-        <input className="book-form__input" name="author" placeholder="author" onChange={handleInputChange} />
-        <Button buttonType="submit">Submit</Button>
+      <div className="flex flex-col md:grid grid-cols-6 gap-x-9 gap-y-4">
+        <input className="book-form__input col-span-3" name="title" placeholder="title" onChange={handleInputChange} />
+        <input className="book-form__input col-span-2" name="author" placeholder="author" onChange={handleInputChange} />
+        <Button buttonType="submit">ADD BOOK</Button>
       </div>
     </form>
   );
