@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { add as addNewBook, postBook } from '../redux/books/books';
+import Button from './Button';
+import '../assets/sass/components/book-form.scss';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -24,9 +26,12 @@ const BookForm = () => {
 
   return (
     <form className="book-form" onSubmit={handleSubmit}>
-      <input name="title" placeholder="title" onChange={handleInputChange} />
-      <input name="author" placeholder="author" onChange={handleInputChange} />
-      <button type="submit">Submit</button>
+      <div className="book-form__title">ADD NEW BOOK</div>
+      <div className="flex flex-col md:grid grid-cols-6 gap-x-9 gap-y-4">
+        <input className="book-form__input col-span-3" name="title" placeholder="title" onChange={handleInputChange} />
+        <input className="book-form__input col-span-2" name="author" placeholder="author" onChange={handleInputChange} />
+        <Button buttonType="submit">ADD BOOK</Button>
+      </div>
     </form>
   );
 };

@@ -4,8 +4,10 @@ import Book from './Book';
 
 const BooksList = ({ books }) => (
   <div className="books-list">
-    {books.map(({ item_id, title, author }) => (
-      <Book key={item_id} id={item_id} title={title} author={author} />
+    {books.map(({
+      item_id, title, author, category,
+    }) => (
+      <Book key={item_id} id={item_id} title={title} author={author} category={category} />
     ))}
   </div>
 );
