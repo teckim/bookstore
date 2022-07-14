@@ -1,0 +1,23 @@
+.book-form {
+  margin-bottom: 2rem;
+
+  &__title {
+    margin-bottom: 1.188rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: -0.18px;
+    color: #888;
+  }
+
+  &__input {
+    min-height: 2.063rem;
+    padding: 0 8px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.15px;
+    color: #c4c4c4;
+  }
+}

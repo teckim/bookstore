@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+
+  &__link {
+    text-transform: uppercase;
+    opacity: 0.5;
+
+    &:not(:last-child) {
+      margin-right: 2.56rem;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}
