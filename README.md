@@ -1,4 +1,4 @@
-`React` `TailwindCSS` `ES6` `NPM` `LINTERS` `GIT FLOW` <br>
+`React` `TailwindCSS` `SASS` `ES6` `NPM` `LINTERS` `GIT FLOW` <br>
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -9,6 +9,7 @@
 ## Built With
 
 - React
+- SASS
 - TailwindCSS
 - Webpack
 - ES Modules
